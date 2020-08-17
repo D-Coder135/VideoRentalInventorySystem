@@ -3,7 +3,10 @@
  *  Date: 17-08-2020
  *  Time: 10:37 PM
  */
-package definations;
+package definitions;
 
 public class Video {
+    private String videoName;
+    private boolean checkOut;
+    private int rating;
 }
