@@ -9,4 +9,12 @@ public class Video {
     private String videoName;
     private boolean checkOut;
     private int rating;
+
+    /*
+     *This method returns the name of the video.
+     * @return Then name of the video
+     * */
+    public String getName() {
+        return "";
+    }
 }
