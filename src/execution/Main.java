@@ -9,12 +9,14 @@ import definitions.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video();
-        video.setVideoName("Malang");
-        video.setRating(5);
-        video.setCheckOut(true);
-        System.out.println(video.getVideoName());
-        System.out.println(video.getRating());
-        System.out.println(video.isCheckOut());
+        Video video = new Video("Robot"); // constructor
+        System.out.println(video.getVideoName() + ", " + video.getRating() + ", " + video.isCheckOut() + " .");
+        Video video1 = new Video(); // constructor
+        System.out.println(video1.getVideoName() + ", " + video1.getRating() + ", " + video1.isCheckOut() + " .");
+        Video video2 = new Video(); // constructor
+        System.out.println(video2.getVideoName() + ", " + video2.getRating() + ", " + video2.isCheckOut() + " .");
+        Video video3 = new Video(); // constructor
+        System.out.println(video3.getVideoName() + ", " + video3.getRating() + ", " + video3.isCheckOut() + " .");
+
     }
 }

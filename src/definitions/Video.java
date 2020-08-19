@@ -10,6 +10,24 @@ public class Video {
     private boolean checkOut;
     private int rating;
 
+    public Video() {
+        videoName = "Soryavansham";
+        rating = 5;
+        checkOut = true;
+    }
+
+    public Video(String videoName, int rating, boolean checkOut) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = checkOut;
+    }
+
+    public Video(String videoName) {
+        this.videoName = videoName;
+        this.rating = 4;
+        this.checkOut = false;
+    }
+
     public String getVideoName() {
         return videoName;
     }
