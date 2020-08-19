@@ -10,20 +10,27 @@ public class Video {
     private boolean checkOut;
     private int rating;
 
-    /**
-     * This method returns the name of the video.
-     *
-     * @return Then name of the video
-     */
-    public String getName() {
-        return "";
+    public String getVideoName() {
+        return videoName;
     }
 
-    /**
-     * This method sets the checkout value of a video to true or false.
-     * If the value is set to true, that means that a customer has rented a video.
-     */
-    public void checkOut() {
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+    }
 
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public boolean isCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
     }
 }
