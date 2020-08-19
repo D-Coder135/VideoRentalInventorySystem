@@ -51,4 +51,8 @@ public class Video {
     public void setCheckOut(boolean checkOut) {
         this.checkOut = checkOut;
     }
+
+    public String toString() {
+        return String.format("Video Name: %s, Video Rating: %d, Is Video Available: %b", getVideoName(), getRating(), isCheckOut());
+    }
 }
