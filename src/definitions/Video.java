@@ -5,6 +5,8 @@
  */
 package definitions;
 
+import java.util.Objects;
+
 public class Video {
     private String videoName;
     private boolean checkOut;
@@ -54,5 +56,20 @@ public class Video {
 
     public String toString() {
         return String.format("Video Name: %s, Video Rating: %d, Is Video Available: %b", getVideoName(), getRating(), isCheckOut());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return isCheckOut() == video.isCheckOut() &&
+                getRating() == video.getRating() &&
+                Objects.equals(getVideoName(), video.getVideoName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVideoName(), isCheckOut(), getRating());
     }
 }

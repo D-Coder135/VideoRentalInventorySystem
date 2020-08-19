@@ -9,7 +9,7 @@ import definitions.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video("Robot"); // constructor
-        System.out.println(video);
+        Video video = new Video("Robot");
+        Video video2 = new Video("Robot");
     }
 }
