@@ -80,4 +80,13 @@ public class VideoStore {
     public void receiveRating(String name, int rating) {
         System.out.println("The rating of " + name + "has been set to " + rating);
     }
+
+    /**
+     * This method shows a list of all the videos in our inventory.
+     */
+    public void listInventory() {
+        for (Video video : store) {
+            System.out.println(video);
+        }
+    }
 }
