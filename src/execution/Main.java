@@ -5,11 +5,11 @@
  */
 package execution;
 
-import definitions.Video;
+import definitions.VideoStore;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video("Robot");
-        Video video2 = new Video("Robot");
+        VideoStore myVideoStore = new VideoStore();
+        myVideoStore.addVideo("Sooryavansham");
     }
 }
