@@ -13,7 +13,7 @@ public class VideoStore {
     public VideoStore() {
         this.store = new Video[10];
         for (int i = 0; i < store.length; i++) {
-            store[i] = new Video();
+            store[i] = new Video("Video" + (i + 1));
         }
     }
 
@@ -78,7 +78,7 @@ public class VideoStore {
      * @param rating The new rating that you want to set.
      */
     public void receiveRating(String name, int rating) {
-        System.out.println("The rating of " + name + "has been set to " + rating);
+        System.out.println("The rating of " + name + " has been set to " + rating);
     }
 
     /**
